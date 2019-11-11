@@ -1,3 +1,5 @@
+import react from 'react';
+
 class CardHeader extends React.Component {
     render() {
         const { image, category } = this.props;
@@ -11,3 +13,5 @@ class CardHeader extends React.Component {
         )
     }
 }
+
+export default CardHeader
