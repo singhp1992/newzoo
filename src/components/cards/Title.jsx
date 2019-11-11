@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styling/all-cards.scss';
+import '../../styling/cards.css';
 class Title extends React.Component {
     render() {
         return <section className="app-title">
