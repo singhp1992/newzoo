@@ -1,3 +1,4 @@
+import React from 'react';
 class Button extends React.Component {
     render() {
         return (
@@ -7,3 +8,5 @@ class Button extends React.Component {
         )
     }
 }
+
+export default Button
