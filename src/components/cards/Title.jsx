@@ -5,7 +5,6 @@ class Title extends React.Component {
         return <section className="app-title">
             <div className="app-title-content">
                 <h1>Games</h1>
-                <a className="designer-link" href="https://dribbble.com/shots/1978243-Latest-News" target="_blank">Design from <i className="fa fa-dribbble"></i></a>
             </div>
         </section>
     }
