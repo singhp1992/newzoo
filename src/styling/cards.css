@@ -1,25 +1,26 @@
-/* Design inspiration:  https://dribbble.com/shots/1978243-Latest-News */
 body,
 html {
     font-family: 'Montserrat', sans-serif;
-    background-color: #341cac;
+    /* background-color: #341cac; */
+    background-color: #14ac28;
 }
 
 .card {
     width: 280px;
     display: block;
     margin: 60px auto;
-    box-shadow: 10px 5px 40px 20px #2d1896;
-    transition: .25s;
+    box-shadow: 10px 5px 40px 20px #14ac28;
+    transition: .45s;
 }
 
 .card:hover {
-    box-shadow: 10px 5px 40px 20px #271580;
-    cursor: pointer;
+    box-shadow: 10px 5px 20px 10px #0d7a1c;
 }
 
-.card:hover .button-primary {
-    transform: translate(10px, 0);
+.zoom:hover,
+.button-primary:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .card-header {
@@ -31,7 +32,7 @@ html {
     color: #fff;
 }
 
-.card-header--title {
+.card-header-title {
     text-transform: uppercase;
     margin: 0;
 }
@@ -59,13 +60,9 @@ html {
     box-shadow: none;
     font-family: inherit;
     background-color: transparent;
-    color: #341cac;
+    /* color: #341cac; */
     font-size: 15px;
     transition: .25s;
-}
-
-.button-primary i {
-    padding-right: 4px;
 }
 
 .designer-link {
@@ -76,7 +73,6 @@ html {
     display: block;
 }
 
-/* Designer credit: https://dribbble.com/shots/1978243-Latest-News */
 body,
 html {
     overflow-x: hidden;
