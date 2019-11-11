@@ -1,7 +1,7 @@
 import React from 'react';
 import CardHeader from './CardHeader';
 import CardBody from './CardBody';
-import './all-cards.scss';
+import '../../styling/all-cards.scss';
 
 class Card extends React.Component {
     render() {
