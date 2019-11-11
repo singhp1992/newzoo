@@ -7,7 +7,7 @@ import '../../styling/cards.css';
 class Card extends React.Component {
     render() {
         return (
-            <article className="card">
+            <article className="card zoom">
                 <CardHeader 
                     category={ this.props.details.category } 
                     image={ this.props.details.image } 
