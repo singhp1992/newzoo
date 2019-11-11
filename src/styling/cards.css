@@ -60,7 +60,7 @@ html {
     box-shadow: none;
     font-family: inherit;
     background-color: transparent;
-    color: #341cac;
+    /* color: #341cac; */
     font-size: 15px;
     transition: .25s;
 }
