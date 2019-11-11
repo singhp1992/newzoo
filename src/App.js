@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
+import Main from './components/cards/Main'
+import './styling/App.css';
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
         <div className="App-header">
           <h2>Welcome to the Game Center</h2>
         </div>
+        <Main />
       </div>
     );
   }

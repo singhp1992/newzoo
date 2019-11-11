@@ -1,3 +1,11 @@
+/* make sure to make it a mobile first approach! */
+
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+  /* background-color: #341cac; */
+}
+
 .App {
   text-align: center;
 }
@@ -13,6 +21,8 @@
   height: 50px;
   padding: 20px;
   color: white;
+  text-align: left;
+  padding-left: 50px;
 }
 
 /* use for new logo */
