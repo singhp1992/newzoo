@@ -3,7 +3,7 @@ import Title from './Title';
 import Card from './Card';
 import '../../styling/cards.css';
 
-const PostsData = [
+const GameData = [
     {
         "category": "News",
         "title": "Game 1",
@@ -48,12 +48,12 @@ class Main extends React.Component {
         super();
 
         this.state = {
-            posts: {}
+            games: {}
         }
     }
     componentWillMount() {
         this.setState({
-            posts: PostsData
+            games: GameData
         });
     }
 
@@ -66,8 +66,8 @@ class Main extends React.Component {
                 <div className="app-card-list" id="app-card-list">
                     {
                         Object
-                            .keys(this.state.posts)
-                            .map(key => <Card key={key} index={key} details={this.state.posts[key]} />)
+                            .keys(this.state.games)
+                            .map(key => <Card key={key} index={key} details={this.state.games[key]} />)
                     }
                 </div>
             </div>
