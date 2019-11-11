@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styling/cards.css';
+
 class Title extends React.Component {
     render() {
         return <section className="app-title">
