@@ -59,17 +59,19 @@ class Main extends React.Component {
 
 
     render() {
-        return <div>
-            <header className="app-header"></header>
-            <Title />
-            <div className="app-card-list" id="app-card-list">
-                {
-                    Object
-                        .keys(this.state.posts)
-                        .map(key => <Card key={key} index={key} details={this.state.posts[key]} />)
-                }
+        return (
+            <div>
+                <header className="app-header"></header>
+                <Title />
+                <div className="app-card-list" id="app-card-list">
+                    {
+                        Object
+                            .keys(this.state.posts)
+                            .map(key => <Card key={key} index={key} details={this.state.posts[key]} />)
+                    }
+                </div>
             </div>
-        </div>
+        )
     }
 }
 
