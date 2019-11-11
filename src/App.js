@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Main from './components/cards/Main'
 import './App.css';
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
         <div className="App-header">
           <h2>Welcome to the Game Center</h2>
         </div>
+        <Main />
       </div>
     );
   }
