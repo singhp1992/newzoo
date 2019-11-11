@@ -11,8 +11,8 @@ class CardHeader extends React.Component {
         };
 
         return (
-            <header style={style} className="card-header">
-                <h4 className="card-header--title">{ category }</h4>
+            <header style={ style } className="card-header">
+                <h4 className="card-header-title">{ category }</h4>
             </header>
         )
     }
