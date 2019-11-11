@@ -44,6 +44,7 @@ const GameData = [
 
 
 class Main extends React.Component {
+    
     constructor() {
         super();
 
