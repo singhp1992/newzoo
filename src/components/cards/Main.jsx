@@ -44,7 +44,7 @@ const GameData = [
 
 
 class Main extends React.Component {
-    
+
     constructor() {
         super();
 
@@ -68,7 +68,11 @@ class Main extends React.Component {
                     {
                         Object
                             .keys(this.state.games)
-                            .map(key => <Card key={key} index={key} details={this.state.games[key]} />)
+                            .map(key => <Card 
+                                key={ key } 
+                                index={ key } 
+                                details={ this.state.games[key] } 
+                            />)
                     }
                 </div>
             </div>
