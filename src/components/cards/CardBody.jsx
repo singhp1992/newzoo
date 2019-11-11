@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Button from './Button';
 
 class CardBody extends React.Component {
     render() {
