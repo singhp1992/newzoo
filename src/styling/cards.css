@@ -10,7 +10,7 @@ html {
     display: block;
     margin: 60px auto;
     box-shadow: 10px 5px 40px 20px #14ac28;
-    transition: .25s;
+    transition: .45s;
 }
 
 .card:hover {
