@@ -1,4 +1,5 @@
 import React from 'react';
+import './all-cards.scss';
 class Button extends React.Component {
     render() {
         return (

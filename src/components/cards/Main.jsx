@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from './Title';
 import Card from './Card';
+import './all-cards.scss';
 
 const PostsData = [
     {

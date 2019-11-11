@@ -1,4 +1,5 @@
 import React from 'react'
+import './all-cards.scss';
 class Title extends React.Component {
     render() {
         return <section className="app-title">
