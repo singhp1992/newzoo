@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import '../../styling/all-cards.scss';
+import '../../styling/cards.css';
 
 class CardBody extends React.Component {
     render() {
