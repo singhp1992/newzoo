@@ -1,3 +1,4 @@
+import React from 'react'
 class Title extends React.Component {
     render() {
         return <section className="app-title">
@@ -9,3 +10,5 @@ class Title extends React.Component {
         </section>
     }
 }
+
+export default Title
