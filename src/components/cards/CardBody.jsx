@@ -1,3 +1,5 @@
+import React from 'react'
+
 class CardBody extends React.Component {
     render() {
         return (
@@ -13,3 +15,5 @@ class CardBody extends React.Component {
         )
     }
 }
+
+export default CardBody
