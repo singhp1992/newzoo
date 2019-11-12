@@ -3,102 +3,112 @@ import Title from './Title';
 import Card from './Card';
 import '../../styling/cards.css';
 
-const GameData = [
-    {
-        "category": "News",
-        "title": "Game 1",
-        "text": "CNN purchased Casey Neistat's Beme app for $25million.",
-        "image": "https://source.unsplash.com/user/erondu/600x400"
-    },
-    {
-        "category": "Travel",
-        "title": "Game 2",
-        "text": "Learn our tips and tricks on living a nomadic lifestyle",
-        "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
-    },
-    {
-        "category": "Development",
-        "title": "Game 3",
-        "text": "The first ever decoupled starter theme for React & the WP-API",
-        "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
-    },
-    {
-        "category": "News",
-        "title": "Game 4",
-        "text": "CNN purchased Casey Neistat's Beme app for $25million.",
-        "image": "https://source.unsplash.com/user/erondu/600x400"
-    },
-    {
-        "category": "Travel",
-        "title": "Game 5",
-        "text": "Learn our tips and tricks on living a nomadic lifestyle",
-        "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
-    },
-    {
-        "category": "Development",
-        "title": "Game 6",
-        "text": "The first ever decoupled starter theme for React & the WP-API",
-        "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
-    }
-]
+// const GameData = [
+//     {
+//         "category": "News",
+//         "title": "Game 1",
+//         "text": "CNN purchased Casey Neistat's Beme app for $25million.",
+//         "image": "https://source.unsplash.com/user/erondu/600x400"
+//     },
+//     {
+//         "category": "Travel",
+//         "title": "Game 2",
+//         "text": "Learn our tips and tricks on living a nomadic lifestyle",
+//         "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
+//     },
+//     {
+//         "category": "Development",
+//         "title": "Game 3",
+//         "text": "The first ever decoupled starter theme for React & the WP-API",
+//         "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
+//     },
+//     {
+//         "category": "News",
+//         "title": "Game 4",
+//         "text": "CNN purchased Casey Neistat's Beme app for $25million.",
+//         "image": "https://source.unsplash.com/user/erondu/600x400"
+//     },
+//     {
+//         "category": "Travel",
+//         "title": "Game 5",
+//         "text": "Learn our tips and tricks on living a nomadic lifestyle",
+//         "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
+//     },
+//     {
+//         "category": "Development",
+//         "title": "Game 6",
+//         "text": "The first ever decoupled starter theme for React & the WP-API",
+//         "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
+//     }
+// ]
 
 
 class Main extends React.Component {
 
-    state = {
-        data: [
-            {
-                "category": "News",
-                "title": "Game 1",
-                "text": "CNN purchased Casey Neistat's Beme app for $25million.",
-                "image": "https://source.unsplash.com/user/erondu/600x400"
-            },
-            {
-                "category": "Travel",
-                "title": "Game 2",
-                "text": "Learn our tips and tricks on living a nomadic lifestyle",
-                "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
-            },
-            {
-                "category": "Development",
-                "title": "Game 3",
-                "text": "The first ever decoupled starter theme for React & the WP-API",
-                "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
-            },
-            {
-                "category": "News",
-                "title": "Game 4",
-                "text": "CNN purchased Casey Neistat's Beme app for $25million.",
-                "image": "https://source.unsplash.com/user/erondu/600x400"
-            },
-            {
-                "category": "Travel",
-                "title": "Game 5",
-                "text": "Learn our tips and tricks on living a nomadic lifestyle",
-                "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
-            },
-            {
-                "category": "Development",
-                "title": "Game 6",
-                "text": "The first ever decoupled starter theme for React & the WP-API",
-                "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
-            }
-        ]
-    };
+    // state = {
+    //     data: [
+    //         {
+    //             "category": "News",
+    //             "title": "Game 1",
+    //             "text": "CNN purchased Casey Neistat's Beme app for $25million.",
+    //             "image": "https://source.unsplash.com/user/erondu/600x400"
+    //         },
+    //         {
+    //             "category": "Travel",
+    //             "title": "Game 2",
+    //             "text": "Learn our tips and tricks on living a nomadic lifestyle",
+    //             "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
+    //         },
+    //         {
+    //             "category": "Development",
+    //             "title": "Game 3",
+    //             "text": "The first ever decoupled starter theme for React & the WP-API",
+    //             "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
+    //         },
+    //         {
+    //             "category": "News",
+    //             "title": "Game 4",
+    //             "text": "CNN purchased Casey Neistat's Beme app for $25million.",
+    //             "image": "https://source.unsplash.com/user/erondu/600x400"
+    //         },
+    //         {
+    //             "category": "Travel",
+    //             "title": "Game 5",
+    //             "text": "Learn our tips and tricks on living a nomadic lifestyle",
+    //             "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
+    //         },
+    //         {
+    //             "category": "Development",
+    //             "title": "Game 6",
+    //             "text": "The first ever decoupled starter theme for React & the WP-API",
+    //             "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
+    //         }
+    //     ]
+    // };
 
-    // constructor() {
-    //     super();
+    constructor() {
+        // initial state
+        super();
 
-    //     this.state = {
-    //         games: {}
-    //     }
-    // }
-    // componentWillMount() {
-    //     this.setState({
-    //         games: GameData
-    //     });
-    // }
+        this.state = {
+            games: []
+        }
+    }
 
+    componentDidMount() {
+        this.fetchData();
+
+        fetch('https://randomuser.me/api/')
+       
+
+    }
+
+    fetchData() {
+        fetch('https://randomuser.me/api/')
+        .then(response => response.json())
+        .then(parsedJSON => console.log(parsedJSON.results))
+        .catch(error => console.log('parsing failed', error))
+    }
 
     render() {
         return (
@@ -106,7 +116,7 @@ class Main extends React.Component {
                 <header className="app-header"></header>
                 <Title />
                 <div className="app-card-list" id="app-card-list">
-                    {
+                    {/* {
                         Object
                             .keys(this.state.data)
                             .map(key => <Card 
@@ -114,7 +124,7 @@ class Main extends React.Component {
                                 index={ key } 
                                 details={ this.state.data[key] } 
                             />)
-                    }
+                    } */}
                 </div>
             </div>
         )
