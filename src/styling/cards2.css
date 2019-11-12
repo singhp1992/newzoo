@@ -10,6 +10,7 @@ html {
     margin: 60px auto;
     box-shadow: 10px 5px 40px 10px rgba(84, 163, 105, 0.575);
     transition: .45s;
+    background-color: #fff;
 }
 
 .card:hover {
