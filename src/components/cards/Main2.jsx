@@ -6,7 +6,6 @@ import '../../styling/cards2.css';
 class Main2 extends React.Component {
 
     state = {
-        isLoading: true,
         games: []
     }
 
@@ -15,54 +14,46 @@ class Main2 extends React.Component {
     }
 
     fetchUsers() {
-        // Where we're fetching data from
         fetch(`https://jsonplaceholder.typicode.com/users`)
-            // We get the API response and receive data in JSON format...
             .then(response => response.json())
-            // ...then we update the users state
+            // update the users state
             .then(data =>
                 this.setState({
                     games: data,
-                    isLoading: false,
                 })
             )
-            // Catch any errors we hit and update the app
-            .catch(error => this.setState({ error, isLoading: false }));
     }
 
     render() {
-        const { isLoading, games } = this.state;
+        console.log(this.state)
+        const games = this.state;
         return (
             <div>
                 <header className="app-header"></header>
                 <Title />
                 <div className="app-card-list" id="app-card-list">
-                    {}
-                    {!isLoading ? (
-                        games.map(game => {
-                            const { gameName, name } = game;
-                            return (
-                                <div className="card zoom" key={ gameName }>
-                                    <p>Title: {name}</p>
-                                </div>
-                            );
-                        })
-                    ) : (
-                            <h3>Loading...</h3>
-                        )}
+                    { this.state.games.map( game => {
+                        return (
+                            <Card 
+                                key={ game.id }
+                                index={ game }
+                                details={ console.log(game)}
+                            />
+                        );
+                    })} 
                 </div>
             </div>
-        );
+            );
     }
-
-
-    // games.map(game => <Card
-    //     const { gameName, name } = game;
-    //          key={ key }
-    //          details={ this.state.data.keys}            
-    //     />;
 }
 
 export default Main2
 
-// change this.state.data to this.state.games if you uncomment out above state
+
+// next
+// 1. alter card and card header to show the game.name / game.address etc 
+// 2. add static image to make cardbody stand
+// 3. reducers? what
+// 4. use routing to go to individual pages 
+// 5. add actions => fetch game etc 
+// 6. combineReducers? what it do

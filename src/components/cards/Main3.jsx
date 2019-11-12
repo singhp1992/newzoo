@@ -59,7 +59,7 @@ class Main3 extends React.Component {
                         .map(game => <Card 
                             game={ game } 
                             index={ game } 
-                            details={ this.state.data[game] } 
+                            details={ console.log(this.state.data[game]) } 
                         />)} 
                         {/* }) */}
                 </div>
