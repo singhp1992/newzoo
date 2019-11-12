@@ -43,7 +43,7 @@ class Main2 extends React.Component {
                             const { gameName, name } = game;
                             return (
                                 <div className="card zoom" key={ gameName }>
-                                    <p>Name: {name}</p>
+                                    <p>Title: {name}</p>
                                 </div>
                             );
                         })
