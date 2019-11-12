@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Main from './components/cards/Main';
+import Main2 from './components/cards/Main2';
+import Main3 from './components/cards/Main3';
+
 import './styling/App.css';
 
 class App extends Component {
@@ -8,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Main />
+        <Main2 />
       </div>
     );
   }
