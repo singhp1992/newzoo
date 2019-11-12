@@ -86,18 +86,18 @@ class Main extends React.Component {
         ]
     };
 
-    constructor() {
-        super();
+    // constructor() {
+    //     super();
 
-        this.state = {
-            games: {}
-        }
-    }
-    componentWillMount() {
-        this.setState({
-            games: GameData
-        });
-    }
+    //     this.state = {
+    //         games: {}
+    //     }
+    // }
+    // componentWillMount() {
+    //     this.setState({
+    //         games: GameData
+    //     });
+    // }
 
 
     render() {
@@ -108,11 +108,11 @@ class Main extends React.Component {
                 <div className="app-card-list" id="app-card-list">
                     {
                         Object
-                            .keys(this.state.games)
+                            .keys(this.state.data)
                             .map(key => <Card 
                                 key={ key } 
                                 index={ key } 
-                                details={ this.state.games[key] } 
+                                details={ this.state.data[key] } 
                             />)
                     }
                 </div>
@@ -122,3 +122,5 @@ class Main extends React.Component {
 }
 
 export default Main
+
+// change this.state.data to this.state.games if you uncomment out above state
