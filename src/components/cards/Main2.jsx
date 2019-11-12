@@ -34,11 +34,15 @@ class Main2 extends React.Component {
                 <div className="app-card-list" id="app-card-list">
                     { this.state.games.map( game => {
                         return (
-                            <Card 
-                                key={ game.id }
-                                index={ game }
-                                details={ console.log(game)}
-                            />
+                            <div key={game.id}>
+                                <p>Title{game.name}</p>
+                            </div>
+                            // below card will work once cards are aligned
+                            // <Card 
+                            //     key={ game.id }
+                            //     index={ game }
+                            //     details={ console.log(game)}
+                            // />
                         );
                     })} 
                 </div>
@@ -56,4 +60,4 @@ export default Main2
 // 3. reducers? what
 // 4. use routing to go to individual pages 
 // 5. add actions => fetch game etc 
-// 6. combineReducers? what it do
+// 6. combineReducers? what it do?
