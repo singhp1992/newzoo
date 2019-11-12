@@ -1,7 +1,6 @@
 body,
 html {
     font-family: 'Montserrat', sans-serif;
-    /* background-color: #341cac; */
     background-color: #69CC84;
 }
 
@@ -9,12 +8,12 @@ html {
     width: 280px;
     display: block;
     margin: 60px auto;
-    box-shadow: 10px 5px 40px 20px #69CC84;
+    box-shadow: 10px 5px 40px 20px rgba(84, 163, 105, 0.575);
     transition: .45s;
 }
 
 .card:hover {
-    box-shadow: 10px 5px 20px 10px #69CC84;
+    box-shadow: 10px 5px 20px 10px rgb(69, 136, 87);
 }
 
 .zoom:hover,
