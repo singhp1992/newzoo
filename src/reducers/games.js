@@ -1,14 +1,14 @@
 import { FETCH_GAMES } from '../actions/games';
 
-// export default function (state =[], { type, payload }) {
-//     switch (type) {
-//         case FETCH_GAMES: 
-//             return payload
+export default function (state =[], { type, payload }) {
+    switch (type) {
+        case FETCH_GAMES: 
+            return payload
 
-//         default: 
-//             return state
-//     }
-// }
+        default: 
+            return state
+    }
+}
 
 const initialState = [
     {
@@ -49,14 +49,17 @@ const initialState = [
     }
 ];
 
-export default function Games(state=initialState, action) {
-    switch(action.type) {
-        case FETCH_GAMES: 
-            return[
-                ...state,
-                {
-                    title: action.title
-                }
-            ];
-    }
-}
+// export default function Games(state=initialState, action) {
+//     switch(action.type) {
+//         case FETCH_GAMES: 
+//             return[
+//                 ...state,
+//                 {
+//                     title: action.title
+//                 }
+//             ];
+
+//             default: 
+//             return state;
+//     }
+// }
