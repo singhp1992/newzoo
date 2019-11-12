@@ -109,7 +109,7 @@ class Main extends React.Component {
                             const { gameName, name } = game;
                             return (
                                 <div key={ gameName }>
-                                    <p>Name: { name }</p>
+                                    <p>Title{ name }</p>
                                 </div>
                             );
                         })

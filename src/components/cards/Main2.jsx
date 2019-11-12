@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from './Title';
 import Card from './Card';
-import '../../styling/cards.css';
+import '../../styling/cards2.css';
 
 class Main2 extends React.Component {
 
@@ -42,7 +42,7 @@ class Main2 extends React.Component {
                         games.map(game => {
                             const { gameName, name } = game;
                             return (
-                                <div className="card zoom card-body" key={gameName}>
+                                <div className="card zoom" key={ gameName }>
                                     <p>Name: {name}</p>
                                 </div>
                             );

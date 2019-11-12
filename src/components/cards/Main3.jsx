@@ -53,7 +53,7 @@ class Main3 extends React.Component {
                 <header className="app-header"></header>
                 <Title />
                 <div className="app-card-list" id="app-card-list">
-                    {/* { } */}
+                    { }
                     { Object
                         .keys(this.state.data)
                         .map(game => <Card 
