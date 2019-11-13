@@ -34,6 +34,7 @@ class Main2 extends React.Component {
                 <div className="app-card-list" id="app-card-list">
                     { this.state.games.map( game => {
                         return (
+                            // div shows up on screen
                             <div key={game.id}>
                                 <p>Title{game.name}</p>
                             </div>
