@@ -6,49 +6,68 @@ import '../../styling/cards2.css';
 class Main2 extends React.Component {
 
     state = {
-        games: []
+        users: []
     }
 
-    componentDidMount() {
-        this.fetchUsers()
-    }
+    // componentDidMount() {
+    //     this.fetchUsers()
+    // }
 
-    fetchUsers() {
-        fetch(`https://jsonplaceholder.typicode.com/users`)
-            .then(response => response.json())
-            // update the users state
-            .then(data =>
-                this.setState({
-                    games: data,
-                })
-            )
+    //fetchUsers() {
+        // fetch(`https://jsonplaceholder.typicode.com/users`)
+        //     .then(response => response.json())
+        //     // update the users state
+        //     .then(data =>
+        //         this.setState({
+        //             users: data,
+        //         })
+        //     )
+    //}
+
+    async componentDidMount(){
+        const url = 'https://randomuser.me/api/?results=5';
+        const response = await fetch(url);
+        const data = await response.json();
+
+        this.setState({
+            users: data.results
+        })
+        console.log(data.results)
     }
 
     render() {
-        console.log(this.state)
-        // const games = this.state;
+        console.log(this.state.users)
+        // const allUsers = this.state.users.results;
         return (
             <div>
                 <header className="app-header"></header>
                 <Title />
                 <div className="app-card-list" id="app-card-list">
-                    { this.state.games.map( game => {
+                    {/* {this.state.users.map( user => (
+                        <div>
+                            <div>{user.name.first}</div>
+                        </div>
+                    ))} */}
+
+
+
+                   { this.state.users.map( (user, i) => {
                         return (
                             // div shows up on screen
                             // <div key={game.id}>
-                                /* <Card /> */
-                                /* <p>Title{game.name}</p> */
+                            //     <Card />
+                            //     <p>Title{game.name}</p> 
                             // </div>
                             // below card will work once cards are aligned
                             <Card 
-                                key={ game.id }
-                                index={ game }
-                                details={ console.log(game)}
+                                key={ i }
+                                // index={ user }
+                                details={ user.name }
                             />
                         );
                     })} 
                 </div>
-            </div>
+             </div>
             );
     }
 }
