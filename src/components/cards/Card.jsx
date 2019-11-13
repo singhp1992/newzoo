@@ -4,21 +4,19 @@ import CardBody from './CardBody';
 import '../../styling/cards.css';
 
 
-class Card extends React.Component {
-    render() {
+const Card = props => {
         return (
             <article className="card zoom">
-                {/* <CardHeader 
-                    category={ this.props.details.category} 
-                    image={ this.props.details.image } 
-                /> */}
+                <CardHeader 
+                    // category={ this.props.details.category} 
+                    // image={ this.props.details.image } 
+                />
                 <CardBody 
-                    title={ this.props.games.title } 
-                    // text={ this.props.details.text } 
+                    name={ props.index.name } 
+                    website={ props.index.website } 
                 />
             </article>
         )
-    }
 }
 
 export default Card

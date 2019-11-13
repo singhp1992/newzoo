@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Main2 from './components/cards/Main2';
-import Main3 from './components/cards/Main3';
+// import Main3 from './components/cards/Main3';
 
 import './styling/App.css';
 

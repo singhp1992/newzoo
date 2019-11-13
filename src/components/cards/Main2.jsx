@@ -26,7 +26,7 @@ class Main2 extends React.Component {
 
     render() {
         console.log(this.state)
-        const games = this.state;
+        // const games = this.state;
         return (
             <div>
                 <header className="app-header"></header>
@@ -35,15 +35,16 @@ class Main2 extends React.Component {
                     { this.state.games.map( game => {
                         return (
                             // div shows up on screen
-                            <div key={game.id}>
-                                <p>Title{game.name}</p>
-                            </div>
+                            // <div key={game.id}>
+                                /* <Card /> */
+                                /* <p>Title{game.name}</p> */
+                            // </div>
                             // below card will work once cards are aligned
-                            // <Card 
-                            //     key={ game.id }
-                            //     index={ game }
-                            //     details={ console.log(game)}
-                            // />
+                            <Card 
+                                key={ game.id }
+                                index={ game }
+                                details={ console.log(game)}
+                            />
                         );
                     })} 
                 </div>
