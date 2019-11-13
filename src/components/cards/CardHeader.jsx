@@ -10,14 +10,15 @@ const CardHeader = props => {
     };
 
     return (
-        <header style={style} className="card-header">
+        <div className="card-header">
+            <img src={props.image} />
             {/* <h4 className="card-header-title">Preeti</h4> */}
-        </header>
+        </div>
     )
 }
 
 export default CardHeader
-
+// style = { style } 
 //             backgroundImage: 'url(' + image + ')',
 //                 <h4 className="card-header-title">{ name }</h4>
 

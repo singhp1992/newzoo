@@ -4,7 +4,7 @@ class Header extends Component {
     render() {
         return (
             <div className="App-header">
-                <h2>Welcome to the Game Center</h2>
+                <h2>Welcome</h2>
             </div>
         );
     }
