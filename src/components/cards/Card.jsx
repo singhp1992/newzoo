@@ -9,7 +9,7 @@ const Card = props => {
             <article className="card zoom">
                 <CardHeader 
                     // category={ this.props.details.category} 
-                    // image={ this.props.details.image } 
+                    image={ props.image.large } 
                 />
                 <CardBody 
                     name={ props.details } 

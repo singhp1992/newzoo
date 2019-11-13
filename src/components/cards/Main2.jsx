@@ -17,7 +17,6 @@ class Main2 extends React.Component {
         this.setState({
             users: data.results
         })
-        console.log(data.results)
     }
 
     render() {
@@ -33,7 +32,8 @@ class Main2 extends React.Component {
                                 key={ i }
                                 // index={ user }
                                 details={ user.name }
-                                location= { user.location }
+                                location={ user.location }
+                                image={ user.picture }
                             />
                         );
                     })} 
