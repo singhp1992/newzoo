@@ -36,6 +36,7 @@ class Main2 extends React.Component {
                         return (
                             // div shows up on screen
                             <div key={game.id}>
+                                {/* <Card /> */}
                                 <p>Title{game.name}</p>
                             </div>
                             // below card will work once cards are aligned

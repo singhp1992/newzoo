@@ -7,15 +7,20 @@ class CardHeader extends React.Component {
 
         const { image, category } = this.props;
         var style = {
-            backgroundImage: 'url(' + image + ')',
+            backgroundImage: 'url(`https://i.pinimg.com/originals/a2/ed/a0/a2eda069ffd338e652d768792686b2a5.jpg`)',
         };
 
         return (
             <header style={ style } className="card-header">
-                <h4 className="card-header-title">{ name }</h4>
+                <h4 className="card-header-title">Preeti</h4>
             </header>
         )
     }
 }
 
 export default CardHeader
+
+//             backgroundImage: 'url(' + image + ')',
+//                 <h4 className="card-header-title">{ name }</h4>
+
+

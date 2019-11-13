@@ -8,13 +8,13 @@ class Card extends React.Component {
     render() {
         return (
             <article className="card zoom">
-                {/* <CardHeader 
+                <CardHeader 
                     category={ this.props.details.category} 
                     image={ this.props.details.image } 
-                /> */}
+                />
                 <CardBody 
                     title={ this.props.games.title } 
-                    // text={ this.props.details.text } 
+                    text={ this.props.details.text } 
                 />
             </article>
         )
