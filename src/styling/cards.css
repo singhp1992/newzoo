@@ -1,14 +1,15 @@
 body,
 html {
     font-family: 'Montserrat', sans-serif;
-    background-color: #69CC84;
+    /* background-color: #69CC84; */
+    background-color: #0211C6;
 }
 
 .card {
     width: 280px;
     display: block;
     margin: 60px auto;
-    box-shadow: 10px 5px 40px 10px rgba(84, 163, 105, 0.575);
+    box-shadow: 10px 5px 40px 10px rgb(1, 12, 128);
     transition: .45s;
 }
 
@@ -27,7 +28,7 @@ html {
     width: 100%;
     padding: 15px;
     width: 100%;
-    background-color: black;
+    background-color: #69CC84;
     color: #fff;
 }
 

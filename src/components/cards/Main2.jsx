@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from './Title';
 import Card from './Card';
-import '../../styling/cards2.css';
+import '../../styling/cards.css';
 
 class Main2 extends React.Component {
 

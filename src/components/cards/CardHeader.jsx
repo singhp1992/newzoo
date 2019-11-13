@@ -5,13 +5,13 @@ import '../../styling/cards.css';
 const CardHeader = props => {
 
     const pic = props.image;
-    var style = {
-            backgroundImage: `url(` + pic + `)`,
-    };
+    // var style = {
+    //         backgroundImage: `url(` + pic + `)`,
+    // };
 
     return (
         <div className="card-header">
-            <img src={props.image} />
+            <img src= {props.image} />
             {/* <h4 className="card-header-title">Preeti</h4> */}
         </div>
     )
