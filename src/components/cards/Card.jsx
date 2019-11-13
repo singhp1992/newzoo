@@ -13,7 +13,7 @@ const Card = props => {
                 />
                 <CardBody 
                     name={ props.index.name } 
-                    // text={ this.props.details.text } 
+                    website={ props.index.website } 
                 />
             </article>
         )
