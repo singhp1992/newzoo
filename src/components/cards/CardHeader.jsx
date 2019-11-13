@@ -5,9 +5,10 @@ import '../../styling/cards.css';
 class CardHeader extends React.Component {
     render() {
 
-        const { image, category } = this.props;
+        // const { image, category } = this.props;
+        const image = `https://i.pinimg.com/originals/a2/ed/a0/a2eda069ffd338e652d768792686b2a5.jpg`
         var style = {
-            backgroundImage: 'url(`https://i.pinimg.com/originals/a2/ed/a0/a2eda069ffd338e652d768792686b2a5.jpg`)',
+            backgroundImage: 'url(' + image + ')',
         };
 
         return (

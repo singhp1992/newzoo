@@ -26,7 +26,7 @@ class Main2 extends React.Component {
 
     render() {
         console.log(this.state)
-        const games = this.state;
+        // const games = this.state;
         return (
             <div>
                 <header className="app-header"></header>
