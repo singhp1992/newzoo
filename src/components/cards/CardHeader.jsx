@@ -11,7 +11,7 @@ const CardHeader = props => {
 
     return (
         <div className="card-header">
-            <img src= {props.image} />
+            <img className="user-img" src= {props.image} />
             {/* <h4 className="card-header-title">Preeti</h4> */}
         </div>
     )

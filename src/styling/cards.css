@@ -11,6 +11,7 @@ html {
     margin: 60px auto;
     box-shadow: 10px 5px 40px 10px rgb(1, 12, 128);
     transition: .45s;
+    border-top-left-radius: 25px;
 }
 
 .card:hover {
@@ -28,8 +29,11 @@ html {
     width: 100%;
     padding: 15px;
     width: 100%;
-    background-color: #69CC84;
+    background-color: rgba(2, 18, 198);
     color: #fff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
 }
 
 .card-header-title {
@@ -41,13 +45,15 @@ html {
     padding: 15px;
     background-color: #fff;
     width: 100%;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
-.date {
+/* .date {
     font-size: 11px;
     font-weight: 600;
     color: grey;
-}
+} */
 
 .body-content {
     padding-bottom: 40px;
@@ -60,18 +66,22 @@ html {
     box-shadow: none;
     font-family: inherit;
     background-color: transparent;
-    /* color: #341cac; */
     font-size: 15px;
     transition: .25s;
 }
 
-.designer-link {
+.user-img {
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+/* .designer-link {
     color: #fff;
     text-align: center;
-    fon-size: 12px;
+    font-size: 12px;
     text-decoration: none;
     display: block;
-}
+} */
 
 body,
 html {
