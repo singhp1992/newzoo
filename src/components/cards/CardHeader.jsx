@@ -12,7 +12,7 @@ class CardHeader extends React.Component {
 
         return (
             <header style={ style } className="card-header">
-                <h4 className="card-header-title">{ category }</h4>
+                <h4 className="card-header-title">{ name }</h4>
             </header>
         )
     }
