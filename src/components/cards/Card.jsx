@@ -5,7 +5,6 @@ import '../../styling/cards.css';
 
 
 const Card = props => {
-    console.log(props)
         return (
             <article className="card zoom">
                 <CardHeader 
@@ -14,7 +13,7 @@ const Card = props => {
                 />
                 <CardBody 
                     name={ props.details } 
-                    // website={ props.index.website } 
+                    location={ props.location } 
                 />
             </article>
         )

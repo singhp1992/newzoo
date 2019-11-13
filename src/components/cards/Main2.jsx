@@ -9,21 +9,6 @@ class Main2 extends React.Component {
         users: []
     }
 
-    // componentDidMount() {
-    //     this.fetchUsers()
-    // }
-
-    //fetchUsers() {
-        // fetch(`https://jsonplaceholder.typicode.com/users`)
-        //     .then(response => response.json())
-        //     // update the users state
-        //     .then(data =>
-        //         this.setState({
-        //             users: data,
-        //         })
-        //     )
-    //}
-
     async componentDidMount(){
         const url = 'https://randomuser.me/api/?results=5';
         const response = await fetch(url);
@@ -37,32 +22,18 @@ class Main2 extends React.Component {
 
     render() {
         console.log(this.state.users)
-        // const allUsers = this.state.users.results;
         return (
             <div>
                 <header className="app-header"></header>
                 <Title />
                 <div className="app-card-list" id="app-card-list">
-                    {/* {this.state.users.map( user => (
-                        <div>
-                            <div>{user.name.first}</div>
-                        </div>
-                    ))} */}
-
-
-
                    { this.state.users.map( (user, i) => {
                         return (
-                            // div shows up on screen
-                            // <div key={game.id}>
-                            //     <Card />
-                            //     <p>Title{game.name}</p> 
-                            // </div>
-                            // below card will work once cards are aligned
                             <Card 
                                 key={ i }
                                 // index={ user }
                                 details={ user.name }
+                                location= { user.location }
                             />
                         );
                     })} 
