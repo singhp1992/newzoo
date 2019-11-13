@@ -9,11 +9,11 @@ const Card = props => {
             <article className="card zoom">
                 <CardHeader 
                     // category={ this.props.details.category} 
-                    // image={ this.props.details.image } 
+                    image={ props.image.large } 
                 />
                 <CardBody 
-                    name={ props.index.name } 
-                    website={ props.index.website } 
+                    name={ props.details } 
+                    location={ props.location } 
                 />
             </article>
         )
