@@ -14,7 +14,7 @@ html {
 }
 
 .card:hover {
-    box-shadow: 10px 5px 20px 10px rgb(69, 136, 87);
+    box-shadow: 10px 5px 20px 10px rgb(0, 7, 78);
 }
 
 .zoom:hover,
