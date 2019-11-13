@@ -9,12 +9,12 @@ class Card extends React.Component {
         return (
             <article className="card zoom">
                 <CardHeader 
-                    category={ this.props.details.category} 
-                    image={ this.props.details.image } 
+                    // category={ this.props.details.category} 
+                    // image={ this.props.details.image } 
                 />
                 <CardBody 
-                    title={ this.props.games.title } 
-                    text={ this.props.details.text } 
+                    // title={ this.props.games.title } 
+                    // text={ this.props.details.text } 
                 />
             </article>
         )
